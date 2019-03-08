@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Duke's Corner</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<h1>
-		this is duke again
-	</h1>
- <p>yo</p>
+	<header>
+		Welcome to Barker
+		<img src="images/dog.png" id="background">
+	</header>
+	<div id="navbar">
+		<a href="#home">Home</a>
+		<a href="#news">News</a>
+		<a href="#contact">Profile</a>
+	</div>
+	<div class="feed">
+		<form class="post">
+			<input type="text" placeholder="Add a post..." id="message" autocomplete="off">
+			<button type="button" onclick="tweet();">post</button>
+		</form>
+		<ul id="myList">
+		</ul>
+	<div class="button" onclick="click()">Post Update</div>
+	<script src="app.js"></script>
 </body>
 </html>
